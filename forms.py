@@ -13,7 +13,7 @@ class CardioForm(ModelForm):
         for field in cardio_fields:
             field_name = field['name']
             display_name = field['description']
-            self.fields[field_name] = CharField(label=display_name, max_length=10, default='')
+            self.fields[field_name] = CharField(label=display_name, max_length=10)
 
 # научиться сохранять данные в form_data
 
